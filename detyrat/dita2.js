@@ -11,7 +11,7 @@ function celcToFahr(celcValue){
 console.log('Vlera ne Fahrenheit:', celcToFahr(25));
 //==========================================================================================================//
 
-//Detyra-2: E realizuar me funksion
+//Detyra-2:
 //Kerkesa e detyres: Te shkruhet programi i cili na tregon se numri i dhene eshte numer cift ose numer tek
 //E deklarojme nje funksion me emrin findNum me nje argument num
 function checkOddOrEven(number) {
