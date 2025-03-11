@@ -1,8 +1,141 @@
 /* Detyrat e dates 9 Mars 2025 */
 
+/* =================================================/ START of PART I /=================================================*/
+
+//Detyra-1
+//Find the index of "banana" in ["apple", "banana", "cherry", "banana", "date"].
+const fruitsYouWant = ["apple", "banana", "cherry", "banana", "date"];
+const fruitsIndex2 = fruitsYouWant.indexOf("banana");
+console.log(fruitsIndex2);
+
+// ======================================================================================================== //
+//Detyra-2
+//Find the last occurrence of 3 in [1, 2, 3, 4, 3, 5, 3, 6].
+const numberList = [4,8,15,8,23,8,42];
+const lastThree = numberList.indexOf(3,5);
+console.log("Last occurrence of 3 is:",lastThree);
+
+// ======================================================================================================== //
+//Detyra-3
+// Check if the array ["red", "green", "blue", "yellow"] contains "blue".
+const colorNames = ["red", "green", "blue", "yellow"];
+const checkColorsName = colorNames.includes("blue");
+console.log("Given vegetable exist:",checkColorsName);
+
+// ======================================================================================================== //
+//Detyra-4
+//Find the first user older than 25 in [ { name: "Alice", age: 22 }, { name: "Bob", age: 30 }, { name: "Charlie", age: 25 } ].
+const users = [
+    {name: "Alice", age: 22},
+    {name: "Bob", age: 30},
+    {name: "Charlie", age: 25}
+];
+const firstUserOver25 = users.find(user=>user.age>25);
+console.log("First user older than 25, is: ",firstUserOver25);
+
+// ======================================================================================================== //
+//Detyra-5
+//Find the index of the first string starting with "A" in ["Orange", "Apple", "Banana", "Avocado"].
+const fruits1 = ["Orange", "Apple", "Banana", "Avocado"];
+const fruitsIndex = fruits1.findIndex(fruit=>fruit.startsWith("A"));
+console.log("Index of the first string starting with A, is:", fruitsIndex);
+
+// ======================================================================================================== //
+//Detyra-6
+//Add "lion", "tiger", and "elephant" to an empty array.
+const animals = [];
+animals.push("lion","tiger","elephant");
+console.log(animals);
+
+// ======================================================================================================== //
+//Detyra-7
+//Remove the last element from ["New York", "Paris", "Tokyo", "London"] and print it.
+const cities = ["New York", "Paris", "Tokyo", "London"];
+const lastCityRemove = cities.pop();
+console.log(lastCityRemove);
+console.log(cities);
+
+// ======================================================================================================== //
+//Detyra-8
+// Remove the first element from ["John", "Jane", "Doe", "Smith"].
+const nameOfPerson = ["John", "Jane", "Doe", "Smith"];
+const removeNameOfPerson = nameOfPerson.shift();
+console.log(nameOfPerson);
+
+// ======================================================================================================== //
+//Detyra-9
+//Add "Emma" and "Oliver" to the beginning of ["Sophia", "Liam"].
+const individ = ["sophia","Liam"];
+individ.unshift("Emma","Oliver");
+console.log(individ);
+
+// ======================================================================================================== //
+//Detyra-10
+//Remove the second and third elements from ["red", "green", "blue", "yellow", "purple"].
+const colorsName = ["red", "green", "blue", "yellow", "purple"];
+const newNum = colorsName.splice(1,2);
+console.log(colorsName);
+
+// ======================================================================================================== //
+//Detyra-11
+//Insert "grape" and "mango" at index 1 in ["apple", "banana", "cherry"].
+const fruits10 = ["apple", "banana", "cherry"];
+fruits10.splice(1,0,"grape","mango");
+console.log(fruits10);
+
+// ======================================================================================================== //
+//Detyra-12
+// Replace the last two elements in [10, 20, 30, 40, 50] with 100 and 200.
+let numbersOfTen = [10, 20, 30, 40, 50];
+numbersOfTen[numbersOfTen.length -2] = 100;
+numbersOfTen[numbersOfTen.length -1] = 200;
+console.log(numbersOfTen);
+
+// ======================================================================================================== //
+//Detyra-13
+//Sort [4, 1, 7, 3] in ascending order.
+const numOrder=[4, 1, 7, 3];
+const sortedNumOrder = numOrder.sort((a,b)=>a-b);
+console.log(sortedNumOrder);
+
+// ======================================================================================================== //
+//Detyra-14
+//Sort ["dog", "cat", "elephant", "ant"] alphabetically.
+const animalsArray = ["dog", "cat", "elephant", "ant"];
+animalsArray.sort();
+console.log(animalsArray);
+
+// ======================================================================================================== //
+//Detyra-15
+//Sort [10, 2, 30, 5] so that the numbers are in proper numerical order.
+const arrNumbers = [10, 2, 30, 5];
+arrNumbers.sort((a, b) => a - b);
+console.log(arrNumbers);
+
+// ======================================================================================================== //
+//Detyra-16
+//Reverse ["USA", "Germany", "Japan", "France"].
+const states = ["USA", "Germany", "Japan", "France"];
+states.reverse();
+console.log(states);
+
+// ======================================================================================================== //
+//Detyra-17
+//Reverse [9, 3, 7, 1, 5] and find the maximum value.
+const numberRevMax = [9, 3, 7, 1, 5];
+numberRevMax.reverse();
+const maxValue = Math.max(...numberRevMax);
+
+console.log(numberRevMax); 
+console.log(maxValue);
+
+/* =================================================/ END of PART ONE /=================================================*/
+
+
+/* =================================================/ START of PART II /=================================================*/
+
 //Detyra-1
 //Find the index of "carrot" in ["potato", "carrot", "onion", "carrot", "tomato"].
-
 const vegetables = ["potato","carrot", "onion", "carrot", "tomato"];
 //Find index of carrot
 const index = vegetables.indexOf("carrot");
@@ -18,8 +151,8 @@ console.log("Last occurrence of 8 is:",lastEight);
 // ======================================================================================================= //
 //Detyra-3
 //Check if "grapefruit" exists in ["apple", "orange", "grapefruit", "pineapple"]. 
-const vegetable1 = ["apple", "orange", "grapefruit", "pineapple"];
-const checkVegetable = vegetable1.includes("grapefruit");
+const mixFruits = ["apple", "orange", "grapefruit", "pineapple"];
+const checkVegetable = mixFruits.includes("grapefruit");
 console.log("Given vegetable exist:",checkVegetable);
 
 // ======================================================================================================= //
