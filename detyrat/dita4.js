@@ -23,6 +23,7 @@ const checkVegetable = vegetable1.includes("grapefruit");
 console.log("Given vegetable exist:",checkVegetable);
 
 // ======================================================================================================= //
+//Detyra-4
 //Find the first product with a price greater than 50 in [ { name: "Laptop", price: 1000 }, { name: "Mouse", price: 25 }, { name: "Keyboard", price: 75 } ].
 const products = [
     {name: "Laptop", price: 1000},
@@ -31,6 +32,13 @@ const products = [
 ];
 const firstProductOver50 = products.find(product=>product.price>50);
 console.log("First Product greater than 50, is: ",firstProductOver50);
+
+// ======================================================================================================= //
+//Detyra-5
+//Find the index of the first number greater than 10 in [3, 8, 12, 5, 15].
+const numberGreater10 = [3, 8, 12, 5, 15];
+const findIndexGreater10 = numberGreater10.findIndex(number=>number>10);
+console.log(findIndexGreater10);
 
 // ======================================================================================================= //
 //Detyra-6
@@ -52,6 +60,13 @@ console.log(`We have removed last element from "Earth", "Mars", "Jupiter", "Venu
 const startNumbers = ["third","fourth","fifth"];
 startNumbers.unshift("first","second");
 console.log("After we have added first and second:", startNumbers);
+
+// ======================================================================================================= //
+//Detyra-9
+//Add "first" and "second" to the beginning of [ "third", "fourth", "fifth" ]. 
+const countElements = [ "third", "fourth", "fifth" ];
+countElements.unshift("first","second");
+console.log("After addedd first and second to the beginning ",countElements);
 
 // ======================================================================================================= //
 //Detyra-10
@@ -123,7 +138,7 @@ console.log(wordFound);
 //Detyra-19
 //Find the last occurrence of "hello" in ["hi", "hello", "hey", "hello", "hola"].
 const helloWords = ["hi", "hello", "hey", "hello", "hola"];
-const lastOccurrence = helloWords.lastOccurrence("hello");
+const lastOccurrence = helloWords.lastIndexOf("hello");
 console.log(lastOccurrence);
 
 // ======================================================================================================= //
