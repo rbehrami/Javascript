@@ -1,19 +1,8 @@
 //Detyra-1
 //Given an array of numbers, return a new array where each number is squared. 
-
-// First Method: Using for loop
-
-const arrNumber = [2, 3, 4, 5, 6, 7];
-const squareNumbers = [];
-for (let i = 0; i < arrNumber.length; i++) {
-    squareNumbers.push(arrNumber[i] * arrNumber[i]);
-}
-console.log("Squared using for loop:", squareNumbers);
-
-// Second Method: Using map
 let arrNumber1 = [2, 3, 4, 5, 6, 7];
 let squaredNumbers = arrNumber1.map(num => num * num);
-console.log("Squared using map:", squaredNumbers);
+console.log("Ngritja e numrave ne katror:", squaredNumbers);
 
 // =============================================================================================== //
 //Detyra-2
@@ -25,25 +14,16 @@ console.log(firstLetters);
 // =============================================================================================== //
 //Detyra-3
 //Given an array of objects with properties firstName and lastName, generate an array of full names by concatenating these properties.
-const employer = [{firstName: "Rasim", lastName: "Behrami"}]
-const fullName = employer.map(worker => `${worker.firstName} ${worker.lastName}`)
-console.log(fullName);
+const nameStr = ["firstName","lastName"];
+const fullname = nameStr.reduce((acc,value)=>acc + " " + value);
+console.log("Full Name", fullname);
+
 // =============================================================================================== //
 //Detyra-4
 // Given an array of numbers, create a new array containing only the even numbers.
-//Perdorimi i unazes for...of. 
-/*const numbersN = [1,4,6,7,9,12,13];
-const evenNumbers = [];
-for(const num of numbersN){
-    if(num %2 == 0){
-        evenNumbers.push(num);
-    }
-}
-console.log(evenNumbers);
-*/
 //Perdorimi i metodes filter()(Chaining method)
 const numbersN = [1,4,6,7,9,12,13];
-const evenNumbers = numbersN.filter(num=>num % 2 === 0);
+const evenNumbers = numbersN.filter(num=>num % 2 == 0);
 console.log(evenNumbers);
 
 // =============================================================================================== //
@@ -77,8 +57,8 @@ console.log("Shuma e numrave eshte:",sum);
 // =============================================================================================== //
 //Detyra-8
 //Given an array of numbers, find the maximum value
-const numrat = [2,5,8,12,16];
-const numriMax = numrat.reduce((max,value)=>Math.max(max,value));
+const numrat = [2,5,8,12,16,22];
+const numriMax = numrat.reduce((acc,value)=>Math.max(acc,value));
 console.log("vlera maksimale e dhene eshte: ",numriMax);
 
 // =============================================================================================== //
