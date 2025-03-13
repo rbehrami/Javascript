@@ -32,7 +32,7 @@ console.log(fullName);
 //Detyra-4
 // Given an array of numbers, create a new array containing only the even numbers.
 //Perdorimi i unazes for...of. 
-const numbersN = [1,4,6,7,9,12,13];
+/*const numbersN = [1,4,6,7,9,12,13];
 const evenNumbers = [];
 for(const num of numbersN){
     if(num %2 == 0){
@@ -40,10 +40,11 @@ for(const num of numbersN){
     }
 }
 console.log(evenNumbers);
+*/
 //Perdorimi i metodes filter()(Chaining method)
-/*const numbersN = [1,4,6,7,9,12,13];
-const evenNumbers = numbersN.filter(num=>num % 2 == 0);
-console.log(evenNumbers);*/
+const numbersN = [1,4,6,7,9,12,13];
+const evenNumbers = numbersN.filter(num=>num % 2 === 0);
+console.log(evenNumbers);
 
 // =============================================================================================== //
 //Detyra-5
