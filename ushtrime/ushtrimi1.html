@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <div class="card">
+            <div class="card-header text-center">
+                <h2>Operatoret Aritmetik</h2>
+            </div>  
+            <div class="card-body">
+                <div class="mbledhja text-center">                    
+                    <input id="numri1" class="mt-2" type="text" placeholder="">  
+                    <label for="" class="operatori ms-1 me-1">+</label>                  
+                    <input id="numri2" class="mt-2" type="text" placeholder="">
+                    <input class="button border-0 ms-2 me-2" type="button" value="=" onclick="getAdd()">
+                    <input type="text" id="shuma" class="rezultati border-0" readonly="readonly"/>                
+                </div>
+                <div class="zbritja text-center">                    
+                    <input id="numri3" class="mt-2" type="text" placeholder="">  
+                    <label for="" class="operatori ms-2 me-2">-</label>                  
+                    <input id="numri4" class="mt-2" type="text" placeholder="">
+                    <input class="button border-0 ms-2 me-2" type="button" value="=" onclick="getSubtrack()">
+                    <input type="text" id="zbritja" class="rezultati border-0" readonly="readonly"/> 
+                </div>
+                <div class="shumzimi text-center">                    
+                    <input id="numri5" class="mt-2" type="text" placeholder="">  
+                    <label for="" class="operatori ms-2 me-2">*</label>                  
+                    <input id="numri6" class="mt-2" type="text" placeholder="">
+                    <input class="button border-0 ms-2 me-2" type="button" value="=" onclick="getMultiplication()">
+                    <input type="text" id="shumzimi" class="rezultati border-0" readonly="readonly"/> 
+                </div>
+                <div class="pjestimi text-center">                    
+                    <input id="numri7" class="mt-2" type="text" placeholder="">  
+                    <label for="" class="operatori ms-2 me-2">/</label>                  
+                    <input id="numri8" class="mt-2" type="text" placeholder="">
+                    <input class="button border-0 ms-2 me-2" type="button" value="=" onclick="getDivider()">
+                    <input type="text" id="pjestimi" class="rezultati border-0" readonly="readonly"/> 
+                </div>                    
+            </div>
+            <hr>
+            <div class="card-subheader text-center">
+                <h2>Llogaritja e perqindjes</h2>
+            </div>
+                <h4 class="text-center">Gjeni vleren ne numer nga perqindja?</h4>
+            <div class="card-subbody text-center">
+                <div class="perqindja">
+                    <label for="" class="fs-5">Sa eshte</label>
+                    <input type="text" id="perqindja" placeholder="%">
+                    <label for="" class="fs-5 fw-bold">%</label>
+                    <label for="" class="fs-5">e numrit </label>
+                    <input type="text" id="vlera" placeholder="">
+                    <label for="" class="fs-5">?</label>        
+                    <input type="button"  class="button border-0" type="button" value="=" onclick="getPercentage()">
+                    <input type="text" id="rezultatiPerqindjes" class="rezultati border-0 mb-4" readonly="readonly">
+                </div>
+            </div>
+            <h4 class="text-center">Gjeni vleren e perqindjes nga vlerat e dhena?</h4>
+            <div class="card-subbody text-center">
+                <div class="perqindja">
+                    <label for="" class="fs-5">Numri</label>
+                    <input type="text" id="num1" placeholder="10">
+                    <label for="" class="fs-5">prej numrit</label>
+                    <input type="text" id="num2" placeholder="100">
+                    <label for="" class="fs-5">ne perqindje eshte</label> 
+                    <input type="button"  class="button border-0" type="button" value="=" onclick="getPercentageFromValue()">
+                    <input type="text" id="resultOfPercentage" class="rezultati border-0 mb-5" readonly="readonly">
+                </div>
+            </div>
+        </div>         
+    </div>  
+    <script src="./assets/style.js"></script>
+</body>
+</html>
