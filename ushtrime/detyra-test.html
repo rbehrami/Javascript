@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/style3.css">
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header"><h1>Match the name</h1></div>
+            <div class="card-body d-flex flex-column align-items-center">
+                <h2>➡️ Gues the name</h2>
+                <input type="text" placeholder="Enter your name" id="nameInput" class="text-center mt-4">
+                <button class="btn btn-outline-primary mt-4" onclick="checkName()">Check Name</button>
+                <h3 class="feedback"></h3>
+            </div>
+            <div class="card-footer">
+                <h3>
+                    Your score is:
+                    <h3 class="score">20</h3>
+                </h3>
+            </div>
+        </div>        
+    </div>
+
+    <script src="./assets/ushtrimi.js"></script>
+</body>
+</html>

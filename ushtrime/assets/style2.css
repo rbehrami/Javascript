@@ -1,0 +1,14 @@
+.input {
+    width: 330px;
+    height: 150px;
+    outline: none;
+    border: 5px solid blue;
+    border-radius: 5px;
+    font-size: 70px;
+    font-weight: bolder;
+    padding: 20px;
+  }
+  
+  .guess {
+    width: 200px;
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name Match</title>
+</head>
+<body>
+    <h1>Check your name</h1>
+    <p>Enter your name to see if it matches the random name.</p>
+    
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="checkName()">Check</button>
+    
+    <p id="message"></p>
+
+    <script>
+        // Array of names
+        const names = ["Alice", "Bob", "Charlie", "David", "Eve"];
+
+        // Function to generate a random name
+        function getRandomName() {
+            const randomIndex = Math.floor(Math.random() * names.length);
+            return names[randomIndex];
+        }
+
+        // Store the random name when the page loads
+        const randomName = getRandomName();
+        console.log("Random Name: " + randomName);  // For debugging (you can remove this in production)
+
+        // Function to check if the input name matches the random name
+        function checkName() {
+            const inputName = document.getElementById("nameInput").value;
+            const messageElement = document.getElementById("message");
+
+            if (inputName.trim().toLowerCase() === randomName.toLowerCase()) {
+                messageElement.textContent = "Congratulations, your name matches!";
+                messageElement.style.color = "green";
+            } else {
+                messageElement.textContent = "Your name doesn't match.";
+                messageElement.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
