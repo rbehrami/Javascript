@@ -1,0 +1,28 @@
+.card{
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    background: rgb(57,49,175);
+    background: linear-gradient(90deg, rgba(57,49,175,1) 0%, rgba(9,90,121,1) 49%, rgba(0,198,255,1) 100%);
+}
+.card-header{
+    background: none;
+    border: none;
+}
+.register-form{
+        border-top-left-radius: 60px 60px;
+        border-top-right-radius:60px 60px;
+        border-bottom-right-radius: 20px 20px;
+        border-bottom-left-radius: 20px 20px;
+}
+.form-control{
+    border: 2px solid rgb(192, 197, 199);
+}
+input[name="gender"] {
+	accent-color: rgb(204, 106, 14);
+    width: 18px;
+    height: 18px;
+}
+input[name="agree"]{
+    border: 1px solid black;
+}
