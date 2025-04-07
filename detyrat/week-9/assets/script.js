@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const maleRadioButton = document.getElementById("male");
         const femaleRadioButton = document.getElementById("female");
         const otherRadioButton = document.getElementById("other");
+        const genderFeedback = document.getElementById("genderfeedback");
         const age = parseInt(document.getElementById("inputAge").value, 10);
         const agreementCheckbox = document.getElementById("agree");
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -76,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
             errorAgeFeedback.textContent = "Age must be a number between 18 and 99.";
             conditionMet = false;
         }
-
+/*
         if (maleRadioButton.checked) {
             console.log("Male is selected");
         } else if (femaleRadioButton.checked) {
@@ -84,10 +85,16 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (otherRadioButton.checked) {
             console.log("Other is selected");
         } else {
+            genderFeedback.textContent = "You must select the gender.";
             console.log("No gender is selected");
             conditionMet = false;
-        }
+        }*/
 
+        if(!maleRadioButton.checked && !femaleRadioButton.checked && !otherRadioButton.checked){
+            genderFeedback.textContent = "You must select the gender.";
+            conditionMet = false;
+        }
+    
         if (!agreementCheckbox.checked) {
             agreeFeedback.textContent = "You must agree to the terms and conditions to proceed.";
             conditionMet = false;
