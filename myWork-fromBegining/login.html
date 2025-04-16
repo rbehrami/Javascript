@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="h-100 gradient-form" style="background-color: #143a53;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-12">
+                <div class="card rounded-3 text-black m-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-body p-md-5 mx-md-4">
+                                <div class="text-center p-md-5 mx-md-4">
+                                    <img src="./assets/images/book-png-25687.jpg" alt="" class="logo-img">
+                                </div>
+                                <form action="" class="login-form">
+                                    <p class="text-center fw-bold fs-5">Please login to your account</p>
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <label for="inputemail" class="form-label">Email</label>
+                                        <input type="email" id="inputemail" class="form-control" placeholder="Email Address">
+                                    </div>
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <label for="inputpassword" class="form-label">Password</label>
+                                        <div class="input-group">
+                                            <input type="password" class="form-control" id="input-password" required>
+                                            <i class="bi bi-shield-lock-fill form-icon pass-lock-icon ms-2 fs-5"></i>
+                                        </div>
+                                        <p id="passwordFeedback" class="text-danger"></p>
+                                    </div>
+                                    <div class="text-center pt-1 mb-5 pb-1">
+                                        <button class="btn btn-primary btn-block fa-lg mb-3 text-white fw-bold" type="submit">Log in</button>
+                                        <a href="#!" class="text-muted">Forgot password?</a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center pb-4">
+                                        <p class="">Don't have an account?</p>
+                                        <button type="button" class="btn btn-outline-danger ms-2"><a href="./register.html">Create now</a></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center gradient-custom-2">
+                            <div class="text-black px-3 py-4 p-md-5 mx-md-4">
+                                <h4 class="mb-4">Log in and look for your favorite programming books.</h4>
+                                <p class="small mb-0">All you need is here.</p>
+                              </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="./scripts/auth/login.js"></script>
+</body>
+</html>

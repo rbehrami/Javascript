@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-light">
+    <div class="container">
+        <!-- Top Section -->
+        <div class="top-content p-5 mt-5  bg-dark">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="text-white text-center ">
+                        <h2 class="text-primary fs-1">Welcome to IT Books</h2>
+                        <p class="fs-3">IT, Programming and Computer Science Books</p>           
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <p class="btn btn-danger" id="logout">Log Out</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+         <div class="row">
+            <div class="col-md-6">
+                <div class="search-content d-flex justify-content-center align-items-center mt-4">
+                    <input type="text" placeholder="Enter book title" class="form-control searchtitle mb-2 me-4">
+                    <!--<input type="text" placeholder="Enter author or keyword" class="form-control searchautor mb-2 me-4"> -->
+                    <button class="btn btn-primary search-button">Search</button>
+                </div>
+            </div>
+         </div>
+        
+
+        <!-- Main Content -->
+        <div class="main-content mb-4">
+            <div class="row cards-container mt-4">
+                <!-- Cards will go here -->
+            </div>
+        </div>
+    </div>
+</body>
+
+    <script src="./scripts/search.js"></script>
+    <script src="./scripts/auth/logout.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+      <div class="container mt-5">
+        <div class="d-flex align-items-center">
+            <h2></h2>
+            <!-- Image on the left-->
+            <div class="me-4">
+                <img src="https://itbook.store/img/books/9781617291609.png" style="width: 30em;" alt="">
+            </div>
+
+            <!--Content on theright-->
+            <div class="d-flex flex-column justify-content-center">
+                <div class="mb-2 fs-3 fw-bold text-uppercase">Title:{}</div>
+                <div class="mb-2 fs-3 fw-bold text-uppercase">Subtitle:{}</div>
+                <div class="mb-2 fs-3 fw-bold text-uppercase">ISBN13:{}</div>
+                <div class="mb-2 fs-3 fw-bold text-uppercase">URL:{}</div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
