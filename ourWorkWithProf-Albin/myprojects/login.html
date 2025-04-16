@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card mt-5 text-center p-4">
+        <i class="bi bi-people profile-icon mb-4"></i>
+
+        <form action="#" id="login-form">
+          <div class="row">
+            <div class="col-1">
+              <i class="bi bi-envelope-fill form-icon"></i>
+            </div>
+            <div class="col-11">
+              <input
+                type="text"
+                class="form-control mb-3 email-input"
+                placeholder="Enter your email..."
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">
+              <i class="bi bi-shield-lock-fill form-icon pass-lock-icon"></i>
+            </div>
+            <div class="col-11">
+              <input
+                type="password"
+                class="form-control mb-3 pass-input"
+                placeholder="Enter your password..."
+              />
+            </div>
+          </div>
+
+          <div class="mb-3 text-danger dont-display" id="feedback">
+            <i class="bi bi-sign-stop d-inline"></i>
+            <p class="d-inline" id="feedback-text"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Login</button>
+          <button class="btn btn-primary"><a href="register.html" class="text-white">Register</a></button>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="./scripts/auth/login.js"></script>
+  </body>
+</html>
