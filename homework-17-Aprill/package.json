@@ -1,0 +1,20 @@
+{
+  "name": "homework-17-aprill",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel login.html register.html dashboard.html profile.html"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.5",
+    "bootstrap-icons": "^1.11.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}

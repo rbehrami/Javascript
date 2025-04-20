@@ -1,0 +1,19 @@
+/* --------- Start Login and Register Style --------*/
+.card-background{
+    background: #2A7B9B !important;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(109, 189, 149, 1) 50%, rgba(237, 129, 83, 1) 100%) !important;
+}
+.header-title{
+    font-size: 1.5rem;
+    color: rgb(16, 5, 63);    
+}
+.form-control{
+    height: 50px;
+    font-size: 1.5rem;
+    color: rgb(19, 61, 92);
+}
+.button-submit{
+    width: 40%;
+    height: 50px;
+}
+/* --------- End Login and Register Style --------*/

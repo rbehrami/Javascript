@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./assets/css/auth.css">
+</head>
+<body class="h-100 gradient-form" style="background-color: #143a53;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex  justify-content-center mt-5">
+            <div class="col-md-12">
+                <div class="card card-background rounded-3 border-0 py-5 px-5 h-100">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <div class="text-center d-flex justify-content-center align-items-center">
+                                    <p><i class="bi bi-people-fill fs-1"></i></p>
+                                    <p class="header-title fs-2 ms-5">Please Register your account!</>
+                                </div>
+                                <form action="" class="register-form mt-5">
+                                    <div class="form-outline mb-4">
+                                        <label for="fullnameinput" class="form-label fs-4">Full Name</label>
+                                        <input type="text" class="form-control rounded-3" id="fullnameinput">
+                                        <p class="text-danger mt-2" id="feedback-fullname"></p>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label for="emailinput" class="form-label fs-4">Email Address</label>
+                                        <input type="email" class="form-control rounded-3" id="emilinput">
+                                        <p class="text-danger mt-2" id="feedback-email"></p>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label for="inputpassword" class="form-label fs-4">Password</label>
+                                        <div class="input-group ">
+                                            <input type="password" class="form-control rounded-3" id="input-password" required>
+                                            <i class="bi bi-shield-lock-fill form-icon pass-lock-icon ms-2 fs-3"></i>
+                                            <p class="text-danger mt-2" id="feedback-password"></p>
+                                        </div>
+                                        <p id="passwordFeedback" class="text-danger"></p>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label for="confirmpassword" class="form-label fs-4">Confirm Password</label>
+                                        <div class="input-group ">
+                                            <input type="password" class="form-control rounded-3" id="input-cfpassword" required>
+                                            <i class="bi bi-shield-lock-fill form-icon pass-lock-cficon ms-2 fs-3"></i>
+                                        </div>
+                                        <p id="feedback-cfpassword" class="text-danger mt-2"></p>
+                                    </div>
+                                    <div class="text-center mt-5">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn btn-primary text-uppercase button-submit">Register</button>
+                                                <p class="mt-4 fs-5">If you have account, Please Login! <a href="login.html">Log In</a></p>
+                                            </div>
+                                        </div>
+                                    </div>                                   
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="./assets/scripts/auth/register.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
